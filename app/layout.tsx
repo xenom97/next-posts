@@ -20,7 +20,9 @@ export default function RootLayout({
       <body className={inter.className} suppressHydrationWarning={true}>
         <Providers>
           <Navbar />
-          <main className="pt-4 bg-slate-100">{children}</main>
+          <main className="p-4 bg-slate-100 min-h-[calc(100vh-88px)]">
+            {children}
+          </main>
         </Providers>
       </body>
     </html>

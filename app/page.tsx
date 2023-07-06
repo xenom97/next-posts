@@ -19,7 +19,7 @@ export default function Home() {
   };
 
   return (
-    <div className="container grid grid-cols-3 gap-4 mx-auto">
+    <div className="container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mx-auto">
       {isLoading
         ? new Array(6).fill(null).map((_, i) => <SkeletonCard key={i} />)
         : (data ?? []).map((post, i) => (
